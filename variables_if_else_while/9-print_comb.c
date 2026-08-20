@@ -15,12 +15,16 @@ int main(void)
 	b = ',';
 	c = 32;
 
-		while (a >= '0' && a <= '9')
+		while (a >= 0 && a <= '9')
 		{
 			putchar(a);
+
+				if (a < '9')
+				{
+					putchar(b);
+                        		putchar(c);
+				}
 			a++;
-			putchar(b);
-			putchar(c);
 		}
 
 	putchar('\n');
